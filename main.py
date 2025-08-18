@@ -25,8 +25,6 @@ def main():
             exit()
         else:
             print("Немає такої команди.\n")
-        #     print(MENU)
-        # user_input = input().strip().lower()
 
 
 if __name__ == '__main__':

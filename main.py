@@ -1,12 +1,6 @@
 from sys import exit
 import functions_logik as fl
 
-MENU = """
-1 - Отримати відформатований звіт
-2 - Пошук
-3 - Показати сирий звіт 
-'q' - exit
-"""
 
 name_file = input("Введи шлях та назву банківського звіту разом з .csv")
 
@@ -14,7 +8,7 @@ name_file = input("Введи шлях та назву банківського 
 def main():
     while True:
 
-        print(MENU)
+        print(fl.MENU)
         user_input = input("Обери команду: ").strip().lower()
         if user_input == "1":
             data_from_report = fl.extract_csv(name_file)
